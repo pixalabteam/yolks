@@ -42,6 +42,7 @@ ensure_steamcmd() {
 }
 
 # Set default values for steam if not provided
+WINDOWS_INSTALL=${WINDOWS_INSTALL:-1}
 STEAM_USER=${STEAM_USER:-anonymous}
 if [ "${STEAM_USER}" == "anonymous" ]; then
 	STEAM_PASS=""
